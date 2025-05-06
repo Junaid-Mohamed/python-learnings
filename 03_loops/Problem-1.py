@@ -33,3 +33,16 @@ for char in string:
     reversedString = char + reversedString
 
 print(reversedString)
+
+"""
+find 1st non-repeated char
+"""
+
+str = "tetedrd"
+
+# r should be the ans.
+
+for char in str:
+    if str.count(char) == 1:
+        print(char)
+        break
