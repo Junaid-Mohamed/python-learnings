@@ -84,3 +84,18 @@ if primeNumber > 1:
             break
 
 print(isPrime)
+
+"""
+list uniqueness checker
+"""
+
+list = ["apple","banana", "mango", "apple"]
+
+uniqueItems = set()
+
+for item in list:
+    if item in uniqueItems:
+        print("Duplicate Item: ",item)
+        break
+    else:
+        uniqueItems.add(item)
