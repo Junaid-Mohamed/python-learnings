@@ -22,3 +22,14 @@ for i in range(n+1):
         sum +=i
 
 print('Sum of even numbers till {n} {sum}'.format(n=n,sum=sum))
+
+"""
+Reverse a str using for loop
+"""
+
+string = "Python"
+reversedString = ""
+for char in string:
+    reversedString = char + reversedString
+
+print(reversedString)
