@@ -46,3 +46,14 @@ for char in str:
     if str.count(char) == 1:
         print(char)
         break
+
+"""factorial using while loop"""
+
+number = 5
+factorial = 1
+
+while number > 0 :
+    factorial*=number
+    number -= 1
+
+print("Factorail of 5 is",factorial)
