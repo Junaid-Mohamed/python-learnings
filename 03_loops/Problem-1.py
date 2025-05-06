@@ -69,3 +69,18 @@ while True:
         break
     else:
         print("Invalid input try again!!")
+
+"""
+Prime number
+"""
+
+primeNumber = 5
+isPrime = True
+
+if primeNumber > 1:
+    for i in range(2,primeNumber):
+        if(primeNumber%i) == 0:
+            isPrime = False
+            break
+
+print(isPrime)
