@@ -57,3 +57,15 @@ while number > 0 :
     number -= 1
 
 print("Factorail of 5 is",factorial)
+
+"""
+input validation
+"""
+
+while True:
+    numberInput = int(input("Enter a num b/w 1 and 10: "))
+    if 1 <= numberInput <= 10:
+        print("Thanks!")
+        break
+    else:
+        print("Invalid input try again!!")
