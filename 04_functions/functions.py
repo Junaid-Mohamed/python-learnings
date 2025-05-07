@@ -30,3 +30,20 @@ def multiply(p1,p2):
 print(multiply(2,4))
 print(multiply(2,'a'))
 print(multiply('b',4))
+
+"""
+circle stats
+area of circle = pi*r*r
+circumference of circle = 2 * pi * r
+"""
+
+import math
+
+def circleStats(radius):
+    area = math.pi * radius ** 2
+    circumference = 2 * math.pi * radius
+    return round(area,2), round(circumference,3)
+
+a , c = circleStats(2)
+
+print("Area ",a," circumference", c)
