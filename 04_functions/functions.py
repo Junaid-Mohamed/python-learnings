@@ -18,3 +18,15 @@ def sum(n1,n2):
 
 sumOfNums = sum(5,2)
 print(sumOfNums)
+
+"""
+function that numtiplies nums or str
+ploymorphism
+"""
+
+def multiply(p1,p2):
+    return p1*p2
+
+print(multiply(2,4))
+print(multiply(2,'a'))
+print(multiply('b',4))
