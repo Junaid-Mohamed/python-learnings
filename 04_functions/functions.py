@@ -47,3 +47,12 @@ def circleStats(radius):
 a , c = circleStats(2)
 
 print("Area ",a," circumference", c)
+
+"""
+lambda function
+mainly used in frameworks
+usually used for 1 time
+"""
+
+result = lambda x : x ** 3
+print(result(3))
