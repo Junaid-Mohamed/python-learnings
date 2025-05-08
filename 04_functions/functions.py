@@ -92,3 +92,14 @@ val = even_generator(10)
 print(val.__next__())
 print(val.__next__())
 print(val.__next__())
+
+"""
+factorial
+"""
+
+def fact(n):
+    if n==1:
+        return 1
+    return n * fact(n-1)
+
+print(fact(5))
