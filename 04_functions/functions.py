@@ -13,11 +13,11 @@ print(num)
 function take 2 nums and returns a sum
 """
 
-def sum(n1,n2):
-    return n1+n2
+# def sum(n1,n2):
+#     return n1+n2
 
-sumOfNums = sum(5,2)
-print(sumOfNums)
+# sumOfNums = sum(5,2)
+# print(sumOfNums)
 
 """
 function that numtiplies nums or str
@@ -56,3 +56,13 @@ usually used for 1 time
 
 result = lambda x : x ** 3
 print(result(3))
+
+"""
+function with *args
+"""
+
+def summ(*args):
+    return sum(args)
+
+print(summ(2,3,4))
+print(summ(2,3,4,5))
