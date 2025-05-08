@@ -79,3 +79,16 @@ def print_kwargs(**kwargs):
 print_kwargs(name="Junaid")
 print_kwargs(name="Junaid", age=30)
 print_kwargs(name="Junaid", city="Bangalore")
+
+"""
+generator function
+"""
+
+def even_generator(limit):
+    for i in range(2,limit+1,2):
+        yield i
+
+val = even_generator(10)
+print(val.__next__())
+print(val.__next__())
+print(val.__next__())
