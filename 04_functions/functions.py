@@ -59,6 +59,7 @@ print(result(3))
 
 """
 function with *args
+this comes in as tuple
 """
 
 def summ(*args):
@@ -66,3 +67,15 @@ def summ(*args):
 
 print(summ(2,3,4))
 print(summ(2,3,4,5))
+
+"""
+function with *kwargs
+this  comes in as dict
+"""
+
+def print_kwargs(**kwargs):
+    print(kwargs)
+
+print_kwargs(name="Junaid")
+print_kwargs(name="Junaid", age=30)
+print_kwargs(name="Junaid", city="Bangalore")
