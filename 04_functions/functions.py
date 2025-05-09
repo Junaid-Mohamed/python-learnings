@@ -92,6 +92,9 @@ val = even_generator(10)
 print(val.__next__())
 print(val.__next__())
 print(val.__next__())
+print(val.__next__())
+print(val.__next__())
+print(val.__next__())
 
 """
 factorial
