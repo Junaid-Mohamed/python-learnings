@@ -36,6 +36,10 @@ class Car:
     def fuel_type(self):
         return "Petrol or Diesel"
 
+    @staticmethod 
+    def general_description():
+        return "Cars are means of transport"
+    
 my_car = Car("Toyato", "Corolla")
 # print(my_car.brand)
 print(my_car.fullName())
@@ -47,6 +51,7 @@ print(my_car.brand) # access via @property
 my_car.brand = "Honda" # set via @brand.setter
 print(my_car.fullName())
 print(my_car.fuel_type())
+print(my_car.general_description())
 
 # access class variable through object or class
 
@@ -66,3 +71,4 @@ myTesla = ElectricCar("Tesla","Model S", "85 KW")
 print(myTesla.fullName())
 print(myTesla.fuel_type())
 print(Car.total_cars)
+print(Car.general_description())
