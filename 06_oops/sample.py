@@ -13,3 +13,13 @@ class Car:
 my_car = Car("Toyato", "Corolla")
 print(my_car.brand)
 print(my_car.fullName())
+
+class ElectricCar(Car):
+
+    def __init__(self,brand,model,batterySize):
+        super().__init__(brand,model)
+        self.batterySize = batterySize
+
+myTesla = ElectricCar("Tesla","Model S", "85 KW")
+
+print(myTesla.fullName())
