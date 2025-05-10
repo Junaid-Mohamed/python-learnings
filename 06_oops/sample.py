@@ -29,6 +29,9 @@ class Car:
     def brand(self, value):
         self.__brand = value
 
+    def fuel_type(self):
+        return "Petrol or Diesel"
+
 my_car = Car("Toyato", "Corolla")
 # print(my_car.brand)
 print(my_car.fullName())
@@ -39,6 +42,7 @@ print(my_car.get_brand())
 print(my_car.brand) # access via @property
 my_car.brand = "Honda" # set via @brand.setter
 print(my_car.fullName())
+print(my_car.fuel_type())
 
 
 class ElectricCar(Car):
@@ -47,6 +51,10 @@ class ElectricCar(Car):
         super().__init__(brand,model)
         self.batterySize = batterySize
 
+    def fuel_type(self):
+        return "Electric charge"
+
 myTesla = ElectricCar("Tesla","Model S", "85 KW")
 
 print(myTesla.fullName())
+print(myTesla.fuel_type())
