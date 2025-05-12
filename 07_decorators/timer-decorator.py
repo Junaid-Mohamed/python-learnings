@@ -42,3 +42,30 @@ def example_function2(a,b, c="junaid"):
      print(f"this is a function with {a}, {b}, {c} params")
 
 example_function2(2,3,c="Suhail")
+
+"""
+cache return values
+Implement a decorator that cahces the return values of a function, so that when it's called with the same arguments, the cached value is returnd instead of 
+re-executing the function
+"""
+
+
+def cache(func):
+     cache_value = {}
+     def wrapper(*args):
+          print(f"{cache_value} is in cache")
+          if args in cache_value:
+               return cache_value[args]
+          result = func(*args)
+          cache_value[args] = result
+          return result
+     return wrapper
+
+@cache
+def long_running_func(a,b):
+     time.sleep(2)
+     return a+b
+
+print(long_running_func(2,3))
+print(long_running_func(2,3))
+print(long_running_func(4,3))
