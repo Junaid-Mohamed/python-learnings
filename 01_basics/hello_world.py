@@ -6,6 +6,21 @@ def bolo(n):
 bolo("Kaise hain?")
 
 '''
+Q7
+
+SELECT COUNT(*) AS orders_with_more_than_two_items
+FROM (
+    SELECT order_id
+    FROM public.order_details
+    GROUP BY order_id
+    HAVING COUNT(*) > 2
+) AS sub;
+
+'''
+
+
+'''
+Q8
 select extract(month from order_date) as month from public.orders
 where payment_method in ('Credit Card','Debit Card')
 group by month
@@ -14,6 +29,7 @@ limit 1
 '''
 
 """
+Q9.
 SELECT 
     o.payment_method,
     COUNT(od.id) AS count
@@ -24,8 +40,8 @@ JOIN
     ON o.order_id = od.order_id
 GROUP BY 
     o.payment_method
-ORDER BY 
-    count DESC;
+# ORDER BY 
+# count DESC;
 """
 
 """
@@ -45,7 +61,8 @@ SELECT
 FROM 
     public.orders
 GROUP BY 
-    payment_method;"""
+    payment_method;
+    """
 
 """q12
 SELECT 
